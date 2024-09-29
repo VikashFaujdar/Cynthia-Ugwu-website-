@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: General Sans Medium;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: black;
+    background-color: white ;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.loader{
+    width: 100%;
+    z-index: 7897987897897;
+    height: 100vh;
+    background-color: #a0a0a0;
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 3s;
+}
+
+.loader h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+
+.gayab{
+    top: -100%;
+}
+
+#miniCircle{
+    height: 12px;
+    width: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 999999;
+    mix-blend-mode: difference;
+    transition: all ease 0.3s;
+}
+
+#miniCircle h2{
+    font-size: 1.3vw;
+    font-family: General Sans;
+    color: black;
+}
+
+
+#firstPage{
+    padding: 1.9vw 3vw;
+}
+
+#nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+    font-family: General Sans;
+    position: relative;
+    overflow: hidden;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingElem{
+    transform: translateY(100%);
+}
+
+#menu{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    transition: all ease 0.4s;
+    display: flex;
+    gap: 2vw;
+    top: -100%;
+}
+
+#menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: General Sans;
+    font-size: 16px;
+    color: white;
+}
+
+
+#nav h3 a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+}
+
+#nav a:nth-child(2){
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#hero{
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 4.5vw;
+}
+
+#hero p{
+    text-align: right;
+    font-family: General Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#hero h1{
+    font-family: General Sans;
+    font-size: 9.5vw;
+    opacity: 0.6;
+    line-height: 0.9;
+    letter-spacing: 5px;
+}
+
+.hero-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    margin-left: 140px;
+    margin-bottom: 10vw;
+}
+
+#chhotiheading{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.hero-box p{
+    text-align: right;
+    font-family: General Sans;
+    font-size: 11px;
+    margin-top: 10px;
+}
+#heroFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3.6vw;
+}
+
+#heroFooter a{
+    text-decoration: none;
+    font-family: General Sans;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+#heroFooter a:hover i{
+    transform: rotate("45deg");
+}
+
+#heroFooter a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 2px solid white;
+    left: -100%;
+    bottom: 0;
+    transition: all ease 0.4s;
+}
+
+#heroFooter a:hover::after{
+    left: 0;
+}
+
+
+#heroFooter a i{
+    font-size: 15px;
+}
+
+#iconBox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons{
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #AAAAAA;
+}
+
+.icons i{
+    font-size: 14px;
+    font-weight: 800;
+    color: black;
+}
+
+
+#secondPage{
+    margin: 8vw 0;
+    padding: 1.9vw 3vw;
+    padding-right: 10vw;
+    font-family: General Sans;
+    color: #fff;
+}
+
+#elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(120, 120, 120);
+    padding: 3vw 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#elem img{
+    position: absolute;
+    height: 140%;
+    z-index: 1;
+    /* transition: all ease 0.3s; */
+    opacity: 0;
+}
+
+
+#elem:hover h1{
+    padding-left: 8%;
+    opacity: 0.3;
+}
+
+#elem:hover p{
+    opacity: 0.5;
+}
+
+#elem h1{
+    font-family: General Sans;
+    font-size: 7vw;
+    transition: all ease 1s;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+
+#elem p{
+    font-size: 2.5vh;
+    transition: all ease 1s;
+    font-weight: 600;
+}
+
+.last-elem{
+    border-bottom: 1px solid rgb(120, 120, 120);
+    margin-bottom: 40px;
+}
+
+#secondPage-btn{
+    padding: 6px 18px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 100px;
+    transition: all ease 0.8s;
+}
+
+#secondPage-btn sup{
+    opacity: 0.6;
+}
+
+#secondPage-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#autoSlider{
+    margin:15vw 0;
+}
+
+.slider{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 4vw 0;
+    border-top: 1px solid rgb(120, 120, 120);
+    border-bottom: 1px solid rgb(120, 120, 120);
+}
+
+#thirdPage{
+    padding: 1.9vw 3vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: General Sans;
+    color: #fff;
+    gap: 80px;
+}
+
+#thirdPage1{
+    padding-left: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
+    align-items: flex-start;
+    font-family: General Sans;
+    color: #fff;
+    gap: 80px;
+    margin-bottom: 8vw;
+}
+
+#thirdPage1 img{
+    width: 25%;
+}
+
+#about-text{
+    max-width: 460px;
+}
+
+#about-text p{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+#about-text h4{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+#about-text button{
+    margin-top: 2vw;
+    padding: 8px 18px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 100px;
+    transition: all ease 0.8s;
+}
+
+#about-text button:hover{
+    background-color: white;
+    color: black;
+}
+
+#footerPage{
+    padding: 1.9vw 3vw;
+    color: #fff;
+}
+
+#footerPage h1{
+    text-decoration: none;
+    font-family: General Sans;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+#footerPage h1 a{
+    text-decoration: none;
+    font-family: General Sans;
+    color: white;
+    font-size: 15px;
+}
+
+.footerlink{
+    color: white !important;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.footerlink::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid white;
+    position: absolute;
+    transition: all ease 1s;
+    left: 0;
+}
+
+.footerlink:hover::after{
+    width: 100%;
+    animation-name: linkAnim;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+
+#footerBottom{
+    font-family: General Sans;
+    margin-top: 6vw;
+    padding: 1.5vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+#footerBottom a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-bottom: .5vw;
+}
+
+#footerLeft{
+    display: flex;
+    gap: 2vw;
+}
+
+#footerRight{
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+}
+
+#footerRight a{
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+#footerRight a::after{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: -100%;
+    transition: all ease 0.5s;
+}
+
+#footerRight a:hover::after{
+    left: 0;
+}
+
